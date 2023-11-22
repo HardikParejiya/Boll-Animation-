@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Animaton </title>
+    <style>
+        #container{
+            border: 1px solid black;
+            height: 540px;
+            background-color: black;
+        }
+        .common {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: inline-block;
+            animation-name: xyz;
+            animation-duration: 0.9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+        }
+
+        .b1 {
+            background: red;
+            animation-delay: 0s;
+        }
+
+        .b2 {
+            background: green;
+            animation-delay: 0.1s;
+        }
+
+        .b3 {
+            background: blue;
+            animation-delay: 0.2s;
+        }
+
+        .b4 {
+            background: orange;
+            animation-delay: 0.3s;
+        }
+
+        .b5 {
+            background: yellow;
+            animation-delay: 0.4s;
+        }
+
+        .b6 {
+            background: lavender;
+            animation-delay: 0.5s;
+        }
+
+        .b7 {
+            background: purple;
+            animation-delay: 0.6s;
+        }
+        .b8 {
+            background: white;
+            animation-delay: 0.7s;
+        }
+        .b9 {
+            background: lightgreen ;
+            animation-delay: 0.8s;
+        }
+        .b10 {
+            background: lightpink;
+            animation-delay: 0.9s;
+        }
+
+
+        @keyframes xyz {
+            0% {
+                transform: translateY(0px);
+                opacity: 0.5;
+                /* box-shadow: 0px 0px 0px transparent; */
+            }
+
+            100% {
+                transform: translateY(440px);
+                opacity: 1;
+                box-shadow: 0px 10px 20px #fff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="common b1"></div>
+        <div class="common b2"></div>
+        <div class="common b3"></div>
+        <div class="common b4"></div>
+        <div class="common b5"></div>
+        <div class="common b6"></div>
+        <div class="common b7"></div>
+        <div class="common b8"></div>
+        <div class="common b9"></div>
+        <div class="common b10"></div>
+    </div>
+</body>
+
+</html>
